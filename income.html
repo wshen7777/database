@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/gender'>Gender</a></li>
+        <li><a href='/member'>Member</a></li>
+        <li><a href='/income'>Income</a></li>
+    </ul>
+
+    <table>
+    <h1>TOTAL AMOUNT SOLD OF THE PRODUCT IN 2019</h1>
+    <th>Product Line</th>
+    <th>Total Amount Sold</th>
+
+        {{#result}}
+
+        <tr id="ti-id">
+            <td>{{product_line}}</td>
+            <td>{{sum}}</td>
+        
+        </tr>
+        {{/result}}
+    </table>
+</body>
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        background-color: beige;
+    }
+
+    ul a {
+        text-decoration: none;
+        padding: 10px 8px;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    td,
+    th,
+    table {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ti-id:hover {
+        background-color: antiquewhite;
+    }
+
+    li a:hover {
+        background-color: chocolate;
+    }
+</style>
+
+</html>
